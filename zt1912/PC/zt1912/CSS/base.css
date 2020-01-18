@@ -1,0 +1,138 @@
+/*base.css start*/
+
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+input,
+article {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    /* 去除手机端点击的蓝色框 */
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+    color: #333;
+    background: transparent;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear-before:before {
+    border: none !important;
+}
+
+.clear-before-bottm:before {
+    border-bottom: none !important;
+}
+
+.clear-before-right:before {
+    border-right: none !important;
+}
+
+.clear-before-left:before {
+    border-left: none !important;
+}
+
+button,
+input[type=text],
+input[type=search],
+input[type=number],
+input[type=textarea],
+input[type=password] {
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+[contenteditable="true"],
+input,
+textarea {
+    -webkit-user-select: auto!important;
+    -khtml-user-select: auto!important;
+    -moz-user-select: auto!important;
+    -ms-user-select: auto!important;
+    -o-user-select: auto!important;
+    user-select: auto!important;
+}
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #919191;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #919191;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #919191;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #919191;
+}
+
+input:disabled,textarea:disabled{  
+    color:#444A69;
+    opacity: 1;
+    -webkit-text-fill-color: #444A69;
+    background: #ffffff;
+}

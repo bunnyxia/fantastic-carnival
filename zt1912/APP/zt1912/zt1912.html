@@ -1,0 +1,334 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>818会员日专题页</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7189501622a9e604d9c368cd64892f8a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script src="./JS/jquery.min.js"></script>
+    <style>
+        body {
+            width: 100%;
+            background: #fff !important;
+        }
+        .clearfix .left {
+            float: left;
+        }.clearfix .right {
+            float: right;
+        }
+        .pot {
+            position: relative;
+        }
+        .head {
+            width: 100%;
+        }
+        .aHead {
+            position: absolute;
+            width: 37%;
+            height: 9%;
+            right: 17%;
+            top: 61%;
+        }
+        .top {
+            width: 100%;
+            /* background: #fff !important; */
+        }
+        .top>img{
+            width: 100%;
+        }
+        .packet .a1{
+            width: 25%;
+            height: 8%;
+            position: absolute;
+            bottom: 7.8%;
+            left: 6.7%;
+        }
+        .packet .a3 {
+            width: 25%;
+            height: 8%;
+            position: absolute;
+            bottom: 7.8%;
+            right: 5%;
+        }
+        .packet .a2{
+            width: 25%;
+            height: 8%;
+            position: absolute;
+            bottom: 7.8%;
+            left: 38%;
+        }
+        .bask .a1 {
+            width: 23%;
+            height: 17%;
+            position: absolute;
+            bottom: 0.5%;
+            left: 38.8%;
+        }
+        .packet {
+            width: 100%;
+        }
+        .head img,.packet img,.service img,.shop img,.top img {
+            display: block;
+            width: 100%;
+        }
+        .top .clearfix {
+            width: 100%;
+            margin-bottom: 6px;
+        }
+        .shop {
+            width: 100%;
+            padding-bottom: 30px;
+            background: #faf3f1 !important;
+        }
+        .shop .clearfix {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        .top .left .a1{
+            width: 34%;
+            height: 10%;
+            position: absolute;
+            left: 42%;
+            bottom: 7.3%;
+        }
+        .top .right .a1{
+            width: 34%;
+            height: 10%;
+            position: absolute;
+            right: 41.6%;
+            bottom: 7.3%;
+        }
+        .shop .left,.shop .right,.top .left,.top .right{
+            width: 50%;
+        }
+        .shop .left .a1,.shop .right .a1 {
+            width: 44%;
+            height: 10%;
+            position: absolute;
+            right: 6.8%;
+            bottom: 4.2%;
+        }
+        .shop .left .square {
+            width: 90%;
+            height: 80%;
+            position: absolute;
+            left: 3%;
+            top: 0;
+        }
+        .shop .right .square {
+            width: 90%;
+            height: 80%;
+            position: absolute;
+            right: 3%;
+            top: 0;
+        }
+        .shop .right .a1 {
+            right: 3%;
+        }
+        .bottom .a1{
+            width: 24%;
+            height: 6%;
+            position: absolute;
+            bottom: 36%;
+            left: 51.3%;
+            margin-left: -13.5%;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://www.efotile.com/css/bootstrap.css">
+    <link rel="stylesheet" href="https://www.efotile.com/css/v3.0/minilogin.css">
+    <link rel="shortcut icon" href="https://www.efotile.com/images/favicon.ico" />
+    <link rel="stylesheet" href="https://m.efotile.com/Content.V2/css/style-sxcommon.css">
+
+</head>
+
+<body>
+    <header class="fixedHeader">
+        <div class="home-top" style="height:2.8rem;padding:0;">
+            <div class="topSearchInput">
+                <div class="topInput"
+                    style="background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAAhCAYAAABAz8fKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3M2Y1NGE5NC1kYjc2LTQyYmUtOTc1Yy1hOTFlMzljM2Q4MjciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTdBRjZBNTZGOTlDMTFFN0I0MDhCQzQ1QTdBREUyMzUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTdBRjZBNTVGOTlDMTFFN0I0MDhCQzQ1QTdBREUyMzUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxY2I0MWQ2Yy1kZTIwLTQwZGItYTg0YS00NzBhY2E2NTdiZDMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo1Y2JkMjRhOC1jYjZkLTExN2EtYjY0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');border-bottom:0 solid transparent;background-repeat:no-repeat;background-size: 64%;background-position:0 center">
+                </div>
+                <span class="searchIcon"></span>
+                <a href="javascript: NTKF.im_openInPageChat();" class="icon serviceIcon" style="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div style="margin-top: 2.25rem;width: 100%;height: 100%;overflow: auto;padding-bottom: 4.5rem;box-sizing: border-box;-webkit-overflow-scrolling:touch; ">
+
+        <div class="head pot">
+            <img src="./IMG/818app(12).jpg" alt="">
+        </div>
+
+        <div class="top">
+            <div class="packet pot">
+                <img src="./IMG/818app(13).jpg" alt="">
+                <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                <a href="javascript:NTKF.im_openInPageChat()" class="a2"></a>
+                <a href="javascript:NTKF.im_openInPageChat()" class="a3"></a>
+            </div>
+            <div class="bask pot">
+                <img src="./IMG/818app(14).jpg" alt="">
+                <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+            </div>
+            <img src="./IMG/818app(15).jpg" alt="">
+            <div class="clearfix">
+                <div class="left pot">
+                    <img src="./IMG/818app(16).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app(17).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="left pot">
+                    <img src="./IMG/818app(18).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app(19).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop">
+            <img src="./IMG/818app(20).jpg" alt="">
+            <div class="clearfix">
+                <div class="left pot">
+                    <img src="./IMG/818app(21).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=630&isgro=1" class="square"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app(1).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=656&isgro=1" class="square"></a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="left pot">
+                    <img src="./IMG/818app(2).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=617&isgro=0" class="square"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app.jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=663&isgro=1" class="square"></a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="left pot">
+                    <img src="./IMG/818app(3).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="https://m.efotile.com/Goods/Product/Detail?id=634&isgro=0" class="square"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app(4).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=668&isgro=1" class="square"></a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="left pot">
+                    <img src="./IMG/818app(5).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=937&isgro=0" class="square"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app(6).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=2051&isgro=0" class="square"></a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="left pot">
+                    <img src="./IMG/818app(7).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=2090&isgro=0" class="square"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app(8).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="https://m.efotile.com/Goods/Product/Detail?id=614&isgro=1" class="square"></a>
+                </div>
+            </div>
+            <div class="clearfix" style="margin-bottom: 0px;">
+                <div class="left pot">
+                    <img src="./IMG/818app(9).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="http://m.efotile.com/Goods/Product/Detail?id=1807&isgro=0" class="square"></a>
+                </div>
+                <div class="right pot">
+                    <img src="./IMG/818app(10).jpg" alt="">
+                    <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+                    <a href="https://m.efotile.com/Goods/Product/Detail?id=282&isgro=1" class="square"></a>
+                </div>
+            </div>
+            <div class="bottom pot">
+                <img src="./IMG/818app(11).jpg" alt="">
+                <a href="javascript:NTKF.im_openInPageChat()" class="a1"></a>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="fixedFooter">
+        <div class="bottomNav">
+            <a id="Home" href="/Home" class="bottomNavItem">
+                <span class="icon icon-home" style="background-size:18px 17.5px;"></span>
+                <span class="linkname">首页</span>
+            </a>
+            <a id="Prod" href="/Goods/Product/Classify?typeid=0" class="bottomNavItem">
+                <span class="icon icon-classify" style="background-size:17px 17px;"></span>
+                <span class="linkname">所有产品</span>
+            </a>
+            <a id="Welfare" href="/Welfare/Choice" class="bottomNavItem">
+                <span class="icon icon-welfare" style="background-size:17px 17px;"></span>
+                <span class="linkname">会员福利</span>
+            </a>
+            <a id="Cart" href="/Cart" class="bottomNavItem">
+                <span class="icon icon-cart" style="background-size:19.5px 17px;"></span>
+                <span class="linkname">购物车</span>
+            </a>
+            <a id="Me" href="/User/Center" class="bottomNavItem">
+                <span class="icon icon-user" style="background-size:15.5px 18.5px;"></span>
+                <span class="linkname">我的</span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript">
+    var NTKF_PARAM = { "siteid": "kf_9729" /*网站siteid*/, "settingid": "kf_9729_1434606405539" /*代码ID*/, "uid": "" /*会员ID*/, "uname": ""/*会员名*/, "userlevel": "0"/*会员等级*/ }
+</script>
+<script type="text/javascript" src="https://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9729" charset="utf-8"></script>
+<script>
+    var current = new Date()
+    var endTIme = new Date(1566230399000)
+    if (current.getTime() >= endTIme.getTime()) {
+        $('body').append(
+            '<div style="position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);z-index:99999999;"><h1 style="font-size:30px;color:#fff;text-align:center;position:absolute;top:50%;width:100%;">本次活动已结束</h1></div>'
+        )
+    }
+    $(".searchIcon").on('click',function(){
+        window.location.href = 'https://m.efotile.com/Search'
+    })
+</script>
+
+</html>
